@@ -59,11 +59,7 @@ namespace GorillasVigenereRSA
         }
 
 
-
         private delegate void btnEncryptDecrypt();
-
-
-
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
@@ -116,11 +112,6 @@ namespace GorillasVigenereRSA
         }
 
 
-
-
-
-
-
         private void button3_Click(object sender, EventArgs e)
         {
 
@@ -148,7 +139,6 @@ namespace GorillasVigenereRSA
                     File.WriteAllText(pathPublicKey, RSA.ToXmlString(false));
 
                     MessageBox.Show("Public Key và Private Key đã được lưu lại thành công!");
-
                 }
             }
             catch (CryptographicException ex)
@@ -157,14 +147,12 @@ namespace GorillasVigenereRSA
                 //not succeed.
                 MessageBox.Show(ex.Message);
             }
-
-
         }
+
         private string pathKeysXML = "";
 
         private void button2_Click(object sender, EventArgs e)
         {
-
             //this.textBox5.Clear();
             OpenFileDialog op = new OpenFileDialog();
             op.Filter = "Xml files (*.xml)|*.xml|All Files (*.*)|*.*";
@@ -176,7 +164,6 @@ namespace GorillasVigenereRSA
 
             if (File.Exists(pathKeysXML))
             {
-
                 if (Path.GetExtension(pathKeysXML) == ".xml")
                 {
                     XmlDocument xml = new XmlDocument();
@@ -241,7 +228,6 @@ namespace GorillasVigenereRSA
 
             if (f1.ShowDialog() == DialogResult.OK)
             {
-
                 tbOutput = f1.SelectedPath;
             }
             else
@@ -321,11 +307,7 @@ namespace GorillasVigenereRSA
                 MessageBox.Show("Failed: " + ex.Message);
             }
             //  pictureBox1.Hide();
-
         }
-
-
-
 
         private void RSA_Algorithm(string inputFile, string outputFile, RSAParameters RSAKeyInfo, bool isEncrypt)
         {
@@ -419,8 +401,6 @@ namespace GorillasVigenereRSA
 
         private void btnDecryptClick()
         {
-
-
             try
             {
                 if (textBox7.Text.Length != 0 &&
@@ -428,7 +408,6 @@ namespace GorillasVigenereRSA
                    )
                 {
                     //Calculator time ex...
-
 
                     string inputFileName = textBox7.Text, outputFileName = "";
 
@@ -443,16 +422,13 @@ namespace GorillasVigenereRSA
                     {
 
                         outputFileName = tbOutput + "\\" + Path.GetFileName(inputFileName.Substring(0, inputFileName.Length - 5));
-
-
-                    }
-
+                    }   
+                   
                     RSACryptoServiceProvider RSA = new RSACryptoServiceProvider();
                     RSA.FromXmlString(File.ReadAllText(this.pathKeysXML));
 
                     if (isEncryptFile)
                     {
-
                         RSA_Algorithm(inputFileName, outputFileName, RSA.ExportParameters(true), false);
                         MessageBox.Show("Giải mã thành công!");
                     }
@@ -472,13 +448,8 @@ namespace GorillasVigenereRSA
                             {
                                 outputFileName = tbOutput + "\\" + Path.GetFileName(filePaths[i].Substring(0, filePaths[i].Length - 5));
                                 RSA_Algorithm(filePaths[i], outputFileName, RSA.ExportParameters(true), false);
-
                             }
-
                     }
-
-
-
                 }
                 else
                 {
@@ -490,12 +461,10 @@ namespace GorillasVigenereRSA
             {
                 MessageBox.Show("Failed: " + ex.Message);
             }
-
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-
             //this.textBox5.Clear();
             OpenFileDialog op = new OpenFileDialog();
             op.Filter = "Xml files (*.xml)|*.xml|All Files (*.*)|*.*";
@@ -507,7 +476,6 @@ namespace GorillasVigenereRSA
 
             if (File.Exists(pathKeysXML))
             {
-
                 if (Path.GetExtension(pathKeysXML) == ".xml")
                 {
                     XmlDocument xml = new XmlDocument();
@@ -545,12 +513,43 @@ namespace GorillasVigenereRSA
                 textBox7.Text = op.FileName;
         }
 
-
-
-        private void VigenereRSA_Load(object sender, EventArgs e)
+    private void VigenereRSA_Load(object sender, EventArgs e)
         {
 
+        }
 
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label39_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label39_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label36_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label31_Click(object sender, EventArgs e)
+        {
 
         }
     }
