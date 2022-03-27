@@ -29,7 +29,7 @@ namespace GorillasVigenereRSA
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage_Info = new System.Windows.Forms.TabPage();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@ namespace GorillasVigenereRSA
             this.label31 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage_RSA = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -70,9 +70,9 @@ namespace GorillasVigenereRSA
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tabPage_Vigenere = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -91,40 +91,40 @@ namespace GorillasVigenereRSA
             this.label30 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.Gorillas = new System.Windows.Forms.TabControl();
-            this.tabPage3.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.tabPage_Info.SuspendLayout();
+            this.tabPage_RSA.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.tabPage_Vigenere.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.Gorillas.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabPage3
+            // tabPage_Info
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.White;
-            this.tabPage3.Controls.Add(this.label26);
-            this.tabPage3.Controls.Add(this.label27);
-            this.tabPage3.Controls.Add(this.label24);
-            this.tabPage3.Controls.Add(this.label25);
-            this.tabPage3.Controls.Add(this.label22);
-            this.tabPage3.Controls.Add(this.label23);
-            this.tabPage3.Controls.Add(this.label17);
-            this.tabPage3.Controls.Add(this.label18);
-            this.tabPage3.Controls.Add(this.label21);
-            this.tabPage3.Controls.Add(this.label36);
-            this.tabPage3.Controls.Add(this.label31);
-            this.tabPage3.Controls.Add(this.label20);
-            this.tabPage3.Controls.Add(this.label19);
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(951, 461);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "3. Thông tin nhóm";
+            this.tabPage_Info.BackColor = System.Drawing.Color.White;
+            this.tabPage_Info.Controls.Add(this.label26);
+            this.tabPage_Info.Controls.Add(this.label27);
+            this.tabPage_Info.Controls.Add(this.label24);
+            this.tabPage_Info.Controls.Add(this.label25);
+            this.tabPage_Info.Controls.Add(this.label22);
+            this.tabPage_Info.Controls.Add(this.label23);
+            this.tabPage_Info.Controls.Add(this.label17);
+            this.tabPage_Info.Controls.Add(this.label18);
+            this.tabPage_Info.Controls.Add(this.label21);
+            this.tabPage_Info.Controls.Add(this.label36);
+            this.tabPage_Info.Controls.Add(this.label31);
+            this.tabPage_Info.Controls.Add(this.label20);
+            this.tabPage_Info.Controls.Add(this.label19);
+            this.tabPage_Info.Location = new System.Drawing.Point(4, 29);
+            this.tabPage_Info.Name = "tabPage_Info";
+            this.tabPage_Info.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_Info.Size = new System.Drawing.Size(951, 461);
+            this.tabPage_Info.TabIndex = 2;
+            this.tabPage_Info.Text = "3. Thông tin nhóm";
             // 
             // label26
             // 
@@ -142,7 +142,7 @@ namespace GorillasVigenereRSA
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label27.AutoSize = true;
             this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.label27.Location = new System.Drawing.Point(482, 325);
+            this.label27.Location = new System.Drawing.Point(492, 325);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(119, 20);
             this.label27.TabIndex = 12;
@@ -164,7 +164,7 @@ namespace GorillasVigenereRSA
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.label25.Location = new System.Drawing.Point(482, 279);
+            this.label25.Location = new System.Drawing.Point(492, 279);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(119, 20);
             this.label25.TabIndex = 10;
@@ -186,7 +186,7 @@ namespace GorillasVigenereRSA
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.label23.Location = new System.Drawing.Point(482, 233);
+            this.label23.Location = new System.Drawing.Point(492, 233);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(119, 20);
             this.label23.TabIndex = 8;
@@ -208,7 +208,7 @@ namespace GorillasVigenereRSA
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.label18.Location = new System.Drawing.Point(482, 187);
+            this.label18.Location = new System.Drawing.Point(492, 187);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(119, 20);
             this.label18.TabIndex = 6;
@@ -272,26 +272,26 @@ namespace GorillasVigenereRSA
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.label19.Location = new System.Drawing.Point(482, 141);
+            this.label19.Location = new System.Drawing.Point(492, 141);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(119, 20);
             this.label19.TabIndex = 3;
             this.label19.Text = "4501104041";
             // 
-            // tabPage2
+            // tabPage_RSA
             // 
-            this.tabPage2.Controls.Add(this.groupBox3);
-            this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Controls.Add(this.groupBox1);
-            this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(951, 461);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "2. RSA";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage_RSA.Controls.Add(this.groupBox3);
+            this.tabPage_RSA.Controls.Add(this.groupBox2);
+            this.tabPage_RSA.Controls.Add(this.groupBox1);
+            this.tabPage_RSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage_RSA.Location = new System.Drawing.Point(4, 29);
+            this.tabPage_RSA.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage_RSA.Name = "tabPage_RSA";
+            this.tabPage_RSA.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage_RSA.Size = new System.Drawing.Size(951, 461);
+            this.tabPage_RSA.TabIndex = 1;
+            this.tabPage_RSA.Text = "2. RSA";
+            this.tabPage_RSA.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -596,35 +596,22 @@ namespace GorillasVigenereRSA
             this.label6.Size = new System.Drawing.Size(0, 20);
             this.label6.TabIndex = 0;
             // 
-            // tabPage1
+            // tabPage_Vigenere
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.groupBox5);
-            this.tabPage1.Controls.Add(this.groupBox4);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(951, 461);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "1. Vigenere";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(149)))), ((int)(((byte)(235)))));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(715, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 45);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Tiến hành mã hóa";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.tabPage_Vigenere.BackColor = System.Drawing.Color.White;
+            this.tabPage_Vigenere.Controls.Add(this.groupBox5);
+            this.tabPage_Vigenere.Controls.Add(this.groupBox4);
+            this.tabPage_Vigenere.Controls.Add(this.label5);
+            this.tabPage_Vigenere.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage_Vigenere.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.tabPage_Vigenere.Location = new System.Drawing.Point(4, 29);
+            this.tabPage_Vigenere.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage_Vigenere.Name = "tabPage_Vigenere";
+            this.tabPage_Vigenere.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage_Vigenere.Size = new System.Drawing.Size(951, 461);
+            this.tabPage_Vigenere.TabIndex = 0;
+            this.tabPage_Vigenere.Text = "1. Vigenere";
+            this.tabPage_Vigenere.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // groupBox5
             // 
@@ -647,6 +634,19 @@ namespace GorillasVigenereRSA
             this.groupBox5.TabIndex = 12;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Mã hóa Vigenere";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(149)))), ((int)(((byte)(235)))));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(715, 68);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(167, 45);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Tiến hành mã hóa";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
@@ -821,9 +821,9 @@ namespace GorillasVigenereRSA
             this.Gorillas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Gorillas.Controls.Add(this.tabPage1);
-            this.Gorillas.Controls.Add(this.tabPage2);
-            this.Gorillas.Controls.Add(this.tabPage3);
+            this.Gorillas.Controls.Add(this.tabPage_Vigenere);
+            this.Gorillas.Controls.Add(this.tabPage_RSA);
+            this.Gorillas.Controls.Add(this.tabPage_Info);
             this.Gorillas.Location = new System.Drawing.Point(20, 19);
             this.Gorillas.Margin = new System.Windows.Forms.Padding(4);
             this.Gorillas.Name = "Gorillas";
@@ -845,9 +845,9 @@ namespace GorillasVigenereRSA
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gorillas _ Vigenere - RSA";
             this.Load += new System.EventHandler(this.VigenereRSA_Load);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
+            this.tabPage_Info.ResumeLayout(false);
+            this.tabPage_Info.PerformLayout();
+            this.tabPage_RSA.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -855,8 +855,8 @@ namespace GorillasVigenereRSA
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.tabPage_Vigenere.ResumeLayout(false);
+            this.tabPage_Vigenere.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -867,9 +867,9 @@ namespace GorillasVigenereRSA
         }
 
         #endregion
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage_Info;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage_RSA;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
@@ -896,7 +896,7 @@ namespace GorillasVigenereRSA
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage_Vigenere;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabControl Gorillas;

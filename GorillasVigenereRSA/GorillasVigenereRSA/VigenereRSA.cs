@@ -25,18 +25,18 @@ namespace GorillasVigenereRSA
         {
             if (textBox1.Text == "")
             {
-                MessageBox.Show("Bạn chưa nhập chuỗi cần mã hóa");
+                MessageBox.Show("Bạn chưa nhập chuỗi cần mã hóa!");
             }
             else if (textBox2.Text == "")
             {
-                MessageBox.Show("Bạn chưa nhập từ khóa");
+                MessageBox.Show("Bạn chưa nhập từ khóa!");
             }
             else
             {
                 Vigenere vigenere = new Vigenere(textBox2.Text.Trim());
                 vigenere.plainText = textBox1.Text.Trim();
-                textBox3.Text = vigenere.MaHoa();
-                textBox4.Text = vigenere.GiaiMa();
+                textBox3.Text = vigenere.Encryption();
+                textBox4.Text = vigenere.Decryption();
                 if (textBox1.Text == textBox4.Text)
                 {
                     label5.Text = "Kết quả: Thành công. Bản rõ trùng khớp với chuỗi cần mã hóa.";
@@ -84,7 +84,7 @@ namespace GorillasVigenereRSA
             return false;
         }
 
-        public int createkey(int nb)
+        public int createKey(int nb)
         {
             int key = 0;
             for (int i = nb - 1; i >= 2; i--)
@@ -171,11 +171,9 @@ namespace GorillasVigenereRSA
                     try
                     {
                         XmlNode xnList = xml.SelectSingleNode("/RSAKeyValue/Modulus");
-                        // tbN.Text = xnList.InnerText;
+                        
                         xnList = xml.SelectSingleNode("/RSAKeyValue/Exponent");
-                        // tbE.Text = xnList.InnerText;
-                        // xnList = xml.SelectSingleNode("/RSAKeyValue/D");
-                        //  tbD.Text = xnList.InnerText;
+                        
                         MessageBox.Show("Load dữ liệu Public Key thành công!");
                     }
                     catch (Exception ex)
@@ -237,25 +235,19 @@ namespace GorillasVigenereRSA
                 button5.Enabled = true;
                 return;
             }
-
-            //pictureBox1.Show();
+ 
             btnEncryptDecrypt s = new btnEncryptDecrypt(btnEncryptClick);
             s.BeginInvoke(null, null);
 
             button2.Enabled = true;
             button4.Enabled = true;
-            button5.Enabled = true;
-
-            // pictureBox1.Hide();
+            button5.Enabled = true;         
         }
 
         public string tbOutput = "";
 
         private void btnEncryptClick()
-        {
-            // MessageBox.Show("Chọn thư mục lưu file mã hóa");
-
-            //pictureBox1.Show();
+        {            
             try
             {
                 if (textBox6.Text.Length != 0 &&
@@ -286,7 +278,7 @@ namespace GorillasVigenereRSA
 
                             return;
                         }
-                        // tbt.Text = Path.GetDirectoryName(outputFileName);
+
                         for (int i = 0; i < filePaths.Length; i++)
                         {
                             outputFileName = tbOutput + "\\" + Path.GetFileName(filePaths[i]);
@@ -306,7 +298,6 @@ namespace GorillasVigenereRSA
 
                 MessageBox.Show("Failed: " + ex.Message);
             }
-            //  pictureBox1.Hide();
         }
 
         private void RSA_Algorithm(string inputFile, string outputFile, RSAParameters RSAKeyInfo, bool isEncrypt)
@@ -322,29 +313,29 @@ namespace GorillasVigenereRSA
                 int len;
 
                 RSACryptoServiceProvider RSA = new RSACryptoServiceProvider();
-                RSA.ImportParameters(RSAKeyInfo); //Nhập thông tin khoá RSA 
+                RSA.ImportParameters(RSAKeyInfo); // Nhập thông tin khoá RSA 
 
                 int maxBytesCanEncrypted;
-                //RSA chỉ có thể mã hóa các khối dữ liệu ngắn hơn độ dài khóa, chia dữ liệu cho một số khối 
-                //và sau đó mã hóa từng khối và sau đó hợp nhất chúng
+                // RSA chỉ có thể mã hóa các khối dữ liệu ngắn hơn độ dài khóa, chia dữ liệu cho một số khối 
+                // và sau đó mã hóa từng khối và sau đó hợp nhất chúng
                 if (isEncrypt)
                     maxBytesCanEncrypted = ((RSA.KeySize - 384) / 8) + 37;// + 7: OAEP - Đệm mã hóa bất đối xứng tối ưu
                 else
                     maxBytesCanEncrypted = (RSA.KeySize / 8);
-                //Read from the input file, then encrypt and write to the output file.
+                // Read from the input file, then encrypt and write to the output file.
                 while (rdlen < totlen)
                 {
                     if (totlen - rdlen < maxBytesCanEncrypted) maxBytesCanEncrypted = (int)(totlen - rdlen);
                     bin = new byte[maxBytesCanEncrypted];
                     len = fsInput.Read(bin, 0, maxBytesCanEncrypted);
 
-                    if (isEncrypt) encryptedData = RSA.Encrypt(bin, false); //Mã Hoá
-                    else encryptedData = RSA.Decrypt(bin, false); //Giải mã
+                    if (isEncrypt) encryptedData = RSA.Encrypt(bin, false); // Mã Hoá
+                    else encryptedData = RSA.Decrypt(bin, false); // Giải mã
 
                     fsCiperText.Write(encryptedData, 0, encryptedData.Length);
                     rdlen = rdlen + len;
                 }
-                fsCiperText.Close(); //save file
+                fsCiperText.Close(); // Save file
                 fsInput.Close();
             }
             catch (Exception ex)
@@ -374,7 +365,7 @@ namespace GorillasVigenereRSA
                 button8.Enabled = true;
                 return;
             }
-            MessageBox.Show("Chọn thư mục lưu file giải mã");
+            MessageBox.Show("Chọn thư mục lưu file giải mã!");
             FolderBrowserDialog f1 = new FolderBrowserDialog();
 
             if (f1.ShowDialog() == DialogResult.OK)
@@ -453,7 +444,7 @@ namespace GorillasVigenereRSA
                 }
                 else
                 {
-                    MessageBox.Show("Không đủ điều kiện để giải mã !");
+                    MessageBox.Show("Không đủ điều kiện để giải mã!");
                 }
 
             }
@@ -464,8 +455,7 @@ namespace GorillasVigenereRSA
         }
 
         private void button8_Click(object sender, EventArgs e)
-        {
-            //this.textBox5.Clear();
+        {           
             OpenFileDialog op = new OpenFileDialog();
             op.Filter = "Xml files (*.xml)|*.xml|All Files (*.*)|*.*";
             if (op.ShowDialog() == DialogResult.OK)
@@ -483,11 +473,10 @@ namespace GorillasVigenereRSA
                     try
                     {
                         XmlNode xnList = xml.SelectSingleNode("/RSAKeyValue/Modulus");
-                        // tbN.Text = xnList.InnerText;
-                        xnList = xml.SelectSingleNode("/RSAKeyValue/Exponent");
-                        // tbE.Text = xnList.InnerText;
+                        
+                        xnList = xml.SelectSingleNode("/RSAKeyValue/Exponent");                     
                         xnList = xml.SelectSingleNode("/RSAKeyValue/D");
-                        //  tbD.Text = xnList.InnerText;
+                    
                         MessageBox.Show("Load dữ liệu Private Key thành công!");
                     }
                     catch (Exception ex)
@@ -498,7 +487,7 @@ namespace GorillasVigenereRSA
                 }
                 else
                 {
-                    MessageBox.Show("File không đúng định dạng .xml");
+                    MessageBox.Show("File không đúng định dạng .xml!");
                     textBox8.Text = "";
                 }
             }

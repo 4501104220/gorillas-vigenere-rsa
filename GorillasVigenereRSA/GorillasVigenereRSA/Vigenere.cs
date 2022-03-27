@@ -18,54 +18,54 @@ namespace GorillasVigenereRSA
             key = s.ToUpper();
         }
 
-        string chuoi = "ĂÂĐEÊGHIKLÔƠPQRSTUƯV?ÁÀẢÃẠẮẰẲẶẴẤẬẦẨẪÚÙỦŨỤ!ỨỪỬỰỮÉÈẺẼẸMONẾỀỂỆỄÝỲỶỸỴÍÌĨỊỈÓÒỌỎÕYỒỐỔỘỖỚỜỞỠỢX1`F2~3@4#$5%^6&78(9)0_-=/+<>,.|\\';:\"{}[]* JZWDABC";
-
-        public int[] chuoi_mangchiso(string s)
+        string stringArray = "AĂÂBCDĐEÊFGHIJKLMNOÔƠPQRSTUƯVWXYZÁÀẢÃẠẮẰẲẴẶẤẦẨẪẬÉÈẺẼẸẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌỐỒỔỖỘỚỜỞỠỢÚÙỦŨỤỨỪỬỮỰÝỲỶỸỴ1234567890?`~@#$%^&()_-=/+<>,.|\\';:\"{}[]*! ";
+        public int[] stringArrayIndexOf(string s)
         {
-            int[] mang = new int[s.Length];
+            int[] arr = new int[s.Length];
             for (int i = 0; i < s.Length; i++)
-                mang[i] = chuoi.IndexOf(s[i]);
-            return mang;
+                arr[i] = stringArray.IndexOf(s[i]);
+            return arr;
         }
 
-        public string chiso_chuoi(int[] a)
+        public string stringIndexOf(int[] arr)
         {
-            string s = "";
-            for (int i = 0; i < a.Length; i++)
-                s += chuoi[a[i]];
-            return s;
+            string str = "";
+            for (int i = 0; i < arr.Length; i++)
+                str += stringArray[arr[i]];
+            return str;
         }
 
-        public String MaHoa()
+        public String Encryption()
         {
             plainText = plainText.ToUpper();
-            int[] p = chuoi_mangchiso(plainText);
-            int[] k = chuoi_mangchiso(key);
+            int[] arrplainText = stringArrayIndexOf(plainText);
+            int[] arrKey = stringArrayIndexOf(key);
 
-            int[] kq = new int[plainText.Length];
+            int[] result = new int[plainText.Length];
             for (int i = 0, j = 0; i < plainText.Length; i++)
             {
-                kq[i] = (p[i] + k[j]) % chuoi.Length;
-                j = ++j % k.Length;
+                result[i] = (arrplainText[i] + arrKey[j]) % stringArray.Length;
+                j = ++j % arrKey.Length;
             }
-            cipherText = chiso_chuoi(kq);
+            cipherText = stringIndexOf(result);
             return cipherText;
         }
 
-        public String GiaiMa()
+        public String Decryption()
         {
-            int[] c = chuoi_mangchiso(cipherText);
-            int[] k = chuoi_mangchiso(key);
+            int[] arrCipherText = stringArrayIndexOf(cipherText);
+            int[] arrKey = stringArrayIndexOf(key);
 
-            int[] kq = new int[cipherText.Length];
+            int[] result = new int[cipherText.Length];
             for (int i = 0, j = 0; i < cipherText.Length; i++)
             {
-                kq[i] = (c[i] - k[j]) % chuoi.Length;
-                if (kq[i] < 0)
-                    kq[i] = (c[i] + (chuoi.Length - k[j])) % chuoi.Length;
-                j = ++j % k.Length;
+                result[i] = (arrCipherText[i] - arrKey[j]) % stringArray.Length;
+                if (result[i] < 0)
+                    result[i] = (arrCipherText[i] + (stringArray.Length - arrKey[j])) % stringArray.Length;
+                j = ++j % arrKey.Length;
             }
-            plainText = chiso_chuoi(kq);
+
+            plainText = stringIndexOf(result);
             return plainText;
         }
     }
