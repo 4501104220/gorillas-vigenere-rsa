@@ -30,7 +30,19 @@ namespace GorillasVigenereRSA
         private void InitializeComponent()
         {
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -59,38 +71,26 @@ namespace GorillasVigenereRSA
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.Gorillas = new System.Windows.Forms.TabControl();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Gorillas = new System.Windows.Forms.TabControl();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -98,13 +98,14 @@ namespace GorillasVigenereRSA
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabPage1.SuspendLayout();
-            this.Gorillas.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.Gorillas.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.White;
             this.tabPage3.Controls.Add(this.label26);
             this.tabPage3.Controls.Add(this.label27);
             this.tabPage3.Controls.Add(this.label24);
@@ -121,21 +122,161 @@ namespace GorillasVigenereRSA
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(864, 461);
+            this.tabPage3.Size = new System.Drawing.Size(951, 461);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Thông tin nhóm";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Text = "3. Thông tin nhóm";
+            // 
+            // label26
+            // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.label26.Location = new System.Drawing.Point(245, 325);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(139, 20);
+            this.label26.TabIndex = 13;
+            this.label26.Text = "Lê Thanh Thoại";
+            // 
+            // label27
+            // 
+            this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.label27.Location = new System.Drawing.Point(482, 325);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(119, 20);
+            this.label27.TabIndex = 12;
+            this.label27.Text = "4501104227";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.label24.Location = new System.Drawing.Point(245, 279);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(153, 20);
+            this.label24.TabIndex = 11;
+            this.label24.Text = "Trần Quốc Thắng";
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.label25.Location = new System.Drawing.Point(482, 279);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(119, 20);
+            this.label25.TabIndex = 10;
+            this.label25.Text = "4501104220";
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.label22.Location = new System.Drawing.Point(245, 233);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(102, 20);
+            this.label22.TabIndex = 9;
+            this.label22.Text = "Hồ Văn Tài";
+            // 
+            // label23
+            // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.label23.Location = new System.Drawing.Point(482, 233);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(119, 20);
+            this.label23.TabIndex = 8;
+            this.label23.Text = "4501104201";
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.label17.Location = new System.Drawing.Point(245, 187);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(159, 20);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "Nguyễn Văn Giàu";
+            // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.label18.Location = new System.Drawing.Point(482, 187);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(119, 20);
+            this.label18.TabIndex = 6;
+            this.label18.Text = "4501104061";
             // 
             // label21
             // 
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.label21.Location = new System.Drawing.Point(336, 46);
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(148)))), ((int)(((byte)(239)))));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.82178F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(339, 34);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(116, 20);
+            this.label21.Size = new System.Drawing.Size(187, 29);
             this.label21.TabIndex = 5;
             this.label21.Text = "Nhóm Gorillas";
+            // 
+            // label36
+            // 
+            this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label36.Font = new System.Drawing.Font("Verdana", 12.11881F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(482, 95);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(156, 20);
+            this.label36.TabIndex = 15;
+            this.label36.Text = "Mã số sinh viên";
+            this.label36.Click += new System.EventHandler(this.label36_Click);
+            // 
+            // label31
+            // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label31.Font = new System.Drawing.Font("Verdana", 12.11881F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label31.ForeColor = System.Drawing.Color.White;
+            this.label31.Location = new System.Drawing.Point(229, 95);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(193, 20);
+            this.label31.TabIndex = 16;
+            this.label31.Text = "Sinh viên thực hiện";
+            this.label31.Click += new System.EventHandler(this.label31_Click);
+            // 
+            // label20
+            // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.label20.Location = new System.Drawing.Point(245, 141);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(135, 20);
+            this.label20.TabIndex = 4;
+            this.label20.Text = "Huỳnh Anh Dự";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
+            // 
+            // label19
+            // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.label19.Location = new System.Drawing.Point(482, 141);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(119, 20);
+            this.label19.TabIndex = 3;
+            this.label19.Text = "4501104041";
             // 
             // tabPage2
             // 
@@ -147,9 +288,9 @@ namespace GorillasVigenereRSA
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(864, 461);
+            this.tabPage2.Size = new System.Drawing.Size(951, 461);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "RSA";
+            this.tabPage2.Text = "2. RSA";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox3
@@ -164,29 +305,34 @@ namespace GorillasVigenereRSA
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.textBox8);
             this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(7, 285);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.groupBox3.Location = new System.Drawing.Point(-2, 285);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(850, 170);
+            this.groupBox3.Size = new System.Drawing.Size(935, 170);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Giải mã RSA";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(347, 128);
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(149)))), ((int)(((byte)(235)))));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(382, 119);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(229, 36);
+            this.button6.Size = new System.Drawing.Size(171, 36);
             this.button6.TabIndex = 10;
             this.button6.Text = "Tiến hành giải mã";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(723, 86);
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button7.Location = new System.Drawing.Point(794, 65);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(121, 36);
+            this.button7.Size = new System.Drawing.Size(133, 27);
             this.button7.TabIndex = 9;
             this.button7.Text = "Browse...";
             this.button7.UseVisualStyleBackColor = true;
@@ -194,16 +340,18 @@ namespace GorillasVigenereRSA
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(207, 89);
+            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.textBox7.Location = new System.Drawing.Point(520, 65);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(510, 27);
+            this.textBox7.Size = new System.Drawing.Size(239, 27);
             this.textBox7.TabIndex = 8;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(5, 92);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label13.Location = new System.Drawing.Point(516, 33);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(127, 20);
             this.label13.TabIndex = 7;
@@ -211,9 +359,10 @@ namespace GorillasVigenereRSA
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(723, 41);
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button8.Location = new System.Drawing.Point(291, 65);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(121, 36);
+            this.button8.Size = new System.Drawing.Size(133, 27);
             this.button8.TabIndex = 6;
             this.button8.Text = "Browse...";
             this.button8.UseVisualStyleBackColor = true;
@@ -222,7 +371,8 @@ namespace GorillasVigenereRSA
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(6, 45);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label14.Location = new System.Drawing.Point(33, 33);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(173, 20);
             this.label14.TabIndex = 2;
@@ -231,23 +381,24 @@ namespace GorillasVigenereRSA
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(261, 63);
+            this.label15.Location = new System.Drawing.Point(287, 60);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(0, 20);
             this.label15.TabIndex = 1;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(207, 44);
+            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.textBox8.Location = new System.Drawing.Point(37, 65);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(510, 27);
+            this.textBox8.Size = new System.Drawing.Size(239, 27);
             this.textBox8.TabIndex = 4;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(261, 21);
+            this.label16.Location = new System.Drawing.Point(287, 21);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(0, 20);
             this.label16.TabIndex = 0;
@@ -264,29 +415,33 @@ namespace GorillasVigenereRSA
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(7, 109);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.groupBox2.Location = new System.Drawing.Point(-2, 109);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(850, 170);
+            this.groupBox2.Size = new System.Drawing.Size(935, 170);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mã hóa RSA";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(347, 125);
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(149)))), ((int)(((byte)(235)))));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(382, 119);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(229, 36);
+            this.button5.Size = new System.Drawing.Size(171, 36);
             this.button5.TabIndex = 10;
             this.button5.Text = "Tiến hành mã hóa";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(723, 86);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button4.Location = new System.Drawing.Point(795, 67);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(121, 36);
+            this.button4.Size = new System.Drawing.Size(133, 27);
             this.button4.TabIndex = 9;
             this.button4.Text = "Browse...";
             this.button4.UseVisualStyleBackColor = true;
@@ -294,16 +449,18 @@ namespace GorillasVigenereRSA
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(207, 89);
+            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.textBox6.Location = new System.Drawing.Point(520, 67);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(510, 27);
+            this.textBox6.Size = new System.Drawing.Size(239, 27);
             this.textBox6.TabIndex = 8;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(5, 92);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label12.Location = new System.Drawing.Point(517, 35);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(128, 20);
             this.label12.TabIndex = 7;
@@ -311,9 +468,10 @@ namespace GorillasVigenereRSA
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(723, 41);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button2.Location = new System.Drawing.Point(291, 67);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 36);
+            this.button2.Size = new System.Drawing.Size(133, 27);
             this.button2.TabIndex = 6;
             this.button2.Text = "Browse...";
             this.button2.UseVisualStyleBackColor = true;
@@ -322,7 +480,8 @@ namespace GorillasVigenereRSA
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 45);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.Location = new System.Drawing.Point(33, 35);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(167, 20);
             this.label9.TabIndex = 2;
@@ -331,23 +490,24 @@ namespace GorillasVigenereRSA
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(261, 63);
+            this.label10.Location = new System.Drawing.Point(287, 54);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(0, 20);
             this.label10.TabIndex = 1;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(207, 44);
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.textBox5.Location = new System.Drawing.Point(37, 67);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(510, 27);
+            this.textBox5.Size = new System.Drawing.Size(239, 27);
             this.textBox5.TabIndex = 4;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(261, 21);
+            this.label11.Location = new System.Drawing.Point(287, 12);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(0, 20);
             this.label11.TabIndex = 0;
@@ -360,32 +520,36 @@ namespace GorillasVigenereRSA
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(7, 3);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.groupBox1.Location = new System.Drawing.Point(-2, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(850, 100);
+            this.groupBox1.Size = new System.Drawing.Size(935, 100);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tạo cặp khóa";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(482, 39);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(149)))), ((int)(((byte)(235)))));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(393, 37);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(229, 36);
+            this.button3.Size = new System.Drawing.Size(252, 36);
             this.button3.TabIndex = 6;
             this.button3.Text = "Tạo khóa tự động";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.numericUpDown1.Increment = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.numericUpDown1.Location = new System.Drawing.Point(207, 43);
+            this.numericUpDown1.Location = new System.Drawing.Point(228, 43);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             16384,
             0,
@@ -397,7 +561,7 @@ namespace GorillasVigenereRSA
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(229, 27);
+            this.numericUpDown1.Size = new System.Drawing.Size(73, 27);
             this.numericUpDown1.TabIndex = 2;
             this.numericUpDown1.Value = new decimal(new int[] {
             512,
@@ -409,7 +573,8 @@ namespace GorillasVigenereRSA
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 45);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label8.Location = new System.Drawing.Point(33, 43);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(128, 20);
             this.label8.TabIndex = 2;
@@ -418,7 +583,7 @@ namespace GorillasVigenereRSA
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(261, 63);
+            this.label7.Location = new System.Drawing.Point(287, 63);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 20);
             this.label7.TabIndex = 1;
@@ -426,63 +591,136 @@ namespace GorillasVigenereRSA
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(261, 21);
+            this.label6.Location = new System.Drawing.Point(287, 21);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 20);
             this.label6.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Controls.Add(this.groupBox4);
             this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(864, 461);
+            this.tabPage1.Size = new System.Drawing.Size(951, 461);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Vigenere";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Text = "1. Vigenere";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Location = new System.Drawing.Point(29, 396);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 20);
-            this.label5.TabIndex = 10;
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.Location = new System.Drawing.Point(213, 162);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(149)))), ((int)(((byte)(235)))));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(715, 68);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(224, 45);
+            this.button1.Size = new System.Drawing.Size(167, 45);
             this.button1.TabIndex = 6;
             this.button1.Text = "Tiến hành mã hóa";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Gorillas
+            // groupBox5
             // 
-            this.Gorillas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Gorillas.Controls.Add(this.tabPage1);
-            this.Gorillas.Controls.Add(this.tabPage2);
-            this.Gorillas.Controls.Add(this.tabPage3);
-            this.Gorillas.Location = new System.Drawing.Point(18, 19);
-            this.Gorillas.Margin = new System.Windows.Forms.Padding(4);
-            this.Gorillas.Name = "Gorillas";
-            this.Gorillas.SelectedIndex = 0;
-            this.Gorillas.Size = new System.Drawing.Size(872, 494);
-            this.Gorillas.TabIndex = 0;
+            this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox5.BackColor = System.Drawing.Color.White;
+            this.groupBox5.Controls.Add(this.button1);
+            this.groupBox5.Controls.Add(this.textBox2);
+            this.groupBox5.Controls.Add(this.textBox1);
+            this.groupBox5.Controls.Add(this.label1);
+            this.groupBox5.Controls.Add(this.label2);
+            this.groupBox5.Controls.Add(this.label32);
+            this.groupBox5.Controls.Add(this.label33);
+            this.groupBox5.Controls.Add(this.label34);
+            this.groupBox5.Controls.Add(this.label35);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.groupBox5.ForeColor = System.Drawing.Color.Black;
+            this.groupBox5.Location = new System.Drawing.Point(21, 14);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(935, 160);
+            this.groupBox5.TabIndex = 12;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Mã hóa Vigenere";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.textBox2.Location = new System.Drawing.Point(493, 86);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(135, 27);
+            this.textBox2.TabIndex = 14;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.textBox1.Location = new System.Drawing.Point(69, 86);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(357, 27);
+            this.textBox1.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(65, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(144, 20);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Chuỗi cần mã hóa";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(489, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 20);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Từ khóa";
+            // 
+            // label32
+            // 
+            this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(44, 35);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(0, 20);
+            this.label32.TabIndex = 10;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(7, 45);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(0, 20);
+            this.label33.TabIndex = 2;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(287, 63);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(0, 20);
+            this.label34.TabIndex = 1;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(287, 21);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(0, 20);
+            this.label35.TabIndex = 0;
             // 
             // groupBox4
             // 
@@ -494,61 +732,41 @@ namespace GorillasVigenereRSA
             this.groupBox4.Controls.Add(this.label28);
             this.groupBox4.Controls.Add(this.label29);
             this.groupBox4.Controls.Add(this.label30);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(19, 213);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.groupBox4.Location = new System.Drawing.Point(21, 198);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(850, 142);
+            this.groupBox4.Size = new System.Drawing.Size(935, 160);
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Kết quả";
             // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(6, 45);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(0, 20);
-            this.label28.TabIndex = 2;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(261, 63);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(0, 20);
-            this.label29.TabIndex = 1;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(261, 21);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(0, 20);
-            this.label30.TabIndex = 0;
-            // 
             // textBox4
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.Location = new System.Drawing.Point(271, 89);
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.textBox4.Location = new System.Drawing.Point(493, 86);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(540, 27);
+            this.textBox4.Size = new System.Drawing.Size(357, 27);
             this.textBox4.TabIndex = 13;
             // 
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Location = new System.Drawing.Point(271, 26);
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.textBox3.Location = new System.Drawing.Point(69, 86);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(540, 27);
+            this.textBox3.Size = new System.Drawing.Size(357, 27);
             this.textBox3.TabIndex = 11;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 94);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.Location = new System.Drawing.Point(489, 42);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 20);
             this.label4.TabIndex = 12;
@@ -558,231 +776,70 @@ namespace GorillasVigenereRSA
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 26);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(65, 42);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 20);
             this.label3.TabIndex = 10;
             this.label3.Text = "Bản mã";
             // 
-            // label35
+            // label28
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(261, 21);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(0, 20);
-            this.label35.TabIndex = 0;
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(7, 45);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(0, 20);
+            this.label28.TabIndex = 2;
             // 
-            // label34
+            // label29
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(261, 63);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(0, 20);
-            this.label34.TabIndex = 1;
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(287, 63);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(0, 20);
+            this.label29.TabIndex = 1;
             // 
-            // label33
+            // label30
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(6, 45);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(0, 20);
-            this.label33.TabIndex = 2;
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(287, 21);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(0, 20);
+            this.label30.TabIndex = 0;
             // 
-            // label32
+            // label5
             // 
-            this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(40, 26);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(0, 20);
-            this.label32.TabIndex = 10;
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label5.Location = new System.Drawing.Point(32, 396);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 20);
+            this.label5.TabIndex = 10;
             // 
-            // groupBox5
+            // Gorillas
             // 
-            this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox5.Controls.Add(this.textBox2);
-            this.groupBox5.Controls.Add(this.textBox1);
-            this.groupBox5.Controls.Add(this.label1);
-            this.groupBox5.Controls.Add(this.label2);
-            this.groupBox5.Controls.Add(this.label32);
-            this.groupBox5.Controls.Add(this.label33);
-            this.groupBox5.Controls.Add(this.label34);
-            this.groupBox5.Controls.Add(this.label35);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(19, 14);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(850, 142);
-            this.groupBox5.TabIndex = 12;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Mã hóa Vigenere";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Location = new System.Drawing.Point(271, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(540, 27);
-            this.textBox2.TabIndex = 14;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(271, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(540, 27);
-            this.textBox1.TabIndex = 13;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 20);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Chuỗi cần mã hóa";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 88);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 20);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Từ khóa";
-            // 
-            // label31
-            // 
-            this.label31.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(219, 95);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(150, 20);
-            this.label31.TabIndex = 16;
-            this.label31.Text = "Sinh viên thực hiện";
-            this.label31.Click += new System.EventHandler(this.label31_Click);
-            // 
-            // label36
-            // 
-            this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(419, 95);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(126, 20);
-            this.label36.TabIndex = 15;
-            this.label36.Text = "Mã số sinh viên";
-            this.label36.Click += new System.EventHandler(this.label36_Click);
-            // 
-            // label19
-            // 
-            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(434, 128);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(99, 20);
-            this.label19.TabIndex = 3;
-            this.label19.Text = "4501104041";
-            // 
-            // label20
-            // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(219, 128);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(118, 20);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "Huỳnh Anh Dự";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
-            // 
-            // label18
-            // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(434, 176);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(99, 20);
-            this.label18.TabIndex = 6;
-            this.label18.Text = "4501104061";
-            // 
-            // label17
-            // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(219, 176);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(139, 20);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "Nguyễn Văn Giàu";
-            // 
-            // label23
-            // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(434, 225);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(99, 20);
-            this.label23.TabIndex = 8;
-            this.label23.Text = "4501104201";
-            // 
-            // label22
-            // 
-            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(219, 225);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(93, 20);
-            this.label22.TabIndex = 9;
-            this.label22.Text = "Hồ Văn Tài";
-            // 
-            // label25
-            // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(434, 271);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(99, 20);
-            this.label25.TabIndex = 10;
-            this.label25.Text = "4501104220";
-            // 
-            // label24
-            // 
-            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(219, 271);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(139, 20);
-            this.label24.TabIndex = 11;
-            this.label24.Text = "Trần Quốc Thắng";
-            // 
-            // label27
-            // 
-            this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(434, 321);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(99, 20);
-            this.label27.TabIndex = 12;
-            this.label27.Text = "4501104227";
-            // 
-            // label26
-            // 
-            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(219, 321);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(125, 20);
-            this.label26.TabIndex = 13;
-            this.label26.Text = "Lê Thanh Thoại";
+            this.Gorillas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Gorillas.Controls.Add(this.tabPage1);
+            this.Gorillas.Controls.Add(this.tabPage2);
+            this.Gorillas.Controls.Add(this.tabPage3);
+            this.Gorillas.Location = new System.Drawing.Point(20, 19);
+            this.Gorillas.Margin = new System.Windows.Forms.Padding(4);
+            this.Gorillas.Name = "Gorillas";
+            this.Gorillas.SelectedIndex = 0;
+            this.Gorillas.Size = new System.Drawing.Size(959, 494);
+            this.Gorillas.TabIndex = 0;
+            this.Gorillas.SelectedIndexChanged += new System.EventHandler(this.Gorillas_SelectedIndexChanged);
             // 
             // VigenereRSA
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(903, 526);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(231)))), ((int)(((byte)(247)))));
+            this.ClientSize = new System.Drawing.Size(993, 526);
             this.Controls.Add(this.Gorillas);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Verdana", 12.11881F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "VigenereRSA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -800,11 +857,11 @@ namespace GorillasVigenereRSA
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.Gorillas.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.Gorillas.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

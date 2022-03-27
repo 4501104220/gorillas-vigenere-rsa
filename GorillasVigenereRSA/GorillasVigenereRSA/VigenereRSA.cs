@@ -265,7 +265,7 @@ namespace GorillasVigenereRSA
 
                     if (isEncryptFile)
                     {
-                        outputFileName = tbOutput + "\\" + Path.GetFileName(textBox6.Text) + ".gonz";
+                        outputFileName = tbOutput + "\\" + Path.GetFileName(textBox6.Text) + ".tt";
                     }
                     //get Keys.
                     RSACryptoServiceProvider RSA = new RSACryptoServiceProvider();
@@ -291,7 +291,7 @@ namespace GorillasVigenereRSA
                         {
                             outputFileName = tbOutput + "\\" + Path.GetFileName(filePaths[i]);
                             if (Path.GetFileName(filePaths[i]) != "Thumbs.db")
-                                RSA_Algorithm(filePaths[i], outputFileName + ".gonz", RSA.ExportParameters(false), true);
+                                RSA_Algorithm(filePaths[i], outputFileName + ".tt", RSA.ExportParameters(false), true);
                         }
                     }
                 }
@@ -411,7 +411,7 @@ namespace GorillasVigenereRSA
 
                     string inputFileName = textBox7.Text, outputFileName = "";
 
-                    if (isEncryptFile && Path.GetExtension(inputFileName) != ".gonz")
+                    if (isEncryptFile && Path.GetExtension(inputFileName) != ".tt")
                     {
                         MessageBox.Show("Tệp tin này không được hỗ trợ đển giải mã!");
 
@@ -435,7 +435,7 @@ namespace GorillasVigenereRSA
 
                     else
                     {
-                        string[] filePaths = Directory.GetFiles(inputFileName, "*.gonz", SearchOption.AllDirectories);
+                        string[] filePaths = Directory.GetFiles(inputFileName, "*.tt", SearchOption.AllDirectories);
                         if (filePaths.Length == 0 || (filePaths.Length == 1 && (Path.GetFileName(filePaths[0]) == "Thumbs.db")))
                         {
                             MessageBox.Show("Thư mục rỗng!");
@@ -549,6 +549,31 @@ namespace GorillasVigenereRSA
         }
 
         private void label31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Gorillas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
         {
 
         }
